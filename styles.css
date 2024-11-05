@@ -1,0 +1,252 @@
+:root {
+    --background: #f8f9fa;
+    --purple: #6A5ACD;
+    --black: #1C1C1C;
+    --secondary: #5D5C61;
+    --tertiary: #4A708B;
+  }
+  * {
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  #navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--background);
+    padding: 20px 0;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    font-family: "Lora", serif;
+  }
+  .nav-links a {
+    text-decoration: none;
+    color: var(--black);
+    padding: 20px 25px;
+  }
+  .nav-links a:hover {
+    color: var(--tertiary);
+  }
+  header span {
+    opacity: 0%;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .nav-link:hover span{
+    opacity: 100%
+  }
+  section {
+    padding: 70px 0;
+  }
+  #headshot {
+    box-shadow: 0 0 10px var(--black);
+  }
+  #welcome-section {
+    background: var(--background);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 80vh;
+  }
+  #welcome-section-container {
+    text-align: center;
+    margin-right: 5vw;
+  }
+  h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+  }
+  #headshot {
+    max-width: 30vh;
+    border-radius: 30vh;
+  }
+  #welcome-section h1 {
+    color: var(--black);
+    font-size: 60px;
+  }
+  #welcome-section p {
+    color: var(--tertiary);
+    font-size: 25px;
+    margin: 25px 0;
+    font-family: "Lora", serif;
+    font-style: italic;
+  }
+  #about-section {
+    display: flex;
+    align-items: center;
+    background-color: var(--background);
+    height: 80vh;
+  }
+  #about-section h1 {
+    color: var(--black);
+    width: fit-content;
+    margin: auto;
+    font-size: 50px;
+  }
+  #about-section p {
+    color: var(--tertiary);
+    width: 50%;
+    min-width: 400px;
+    margin: 1em auto 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: "Lora", serif;
+    font-style: italic;
+  }
+  #projects-section {
+    background-color: var(--background);
+  }
+  #projects-section h1 {
+    color: var(--black);
+    width: fit-content;
+    margin: auto;
+    font-size: 50px;
+  }
+  #projects-section .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    place-items: center;
+    max-width: 1200px;
+    margin: auto;
+  }
+  #projects-section a {
+    text-decoration: none;
+  }
+  #projects-section .project-tile {
+    height: 525px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--background);
+    color: var(--black);
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--black);
+  }
+  #projects-section .project-tile img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  #projects-section .project-tile p {
+    font-size: 25px;
+    padding: 10px;
+    font-family: "Lora", serif;
+  }
+  #projects-section .project-tile span {
+    opacity: 0%;
+    padding: 0 5px;
+    transition: opacity 0.2s ease-in-out;
+  }
+  #projects-section .project-tile:hover span{
+    opacity: 100%;
+    transition: opacity 0.25s ease-in-out;
+    cursor: pointer;
+  }
+  #projects-section .project-tile:hover {
+    cursor: pointer;
+    box-shadow: 0 0 2px var(--black);
+    color: var(--tertiary);
+  }
+  .show-all {
+    text-decoration: none;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+    padding: 5px 15px;
+    background-color: var(--background);
+    color: var(--black);
+    font-size: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+    font-family: "Lora", serif;
+    box-shadow: 0 0 5px var(--black);
+  }
+  .show-all span {
+    opacity: 0%;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .show-all:hover span{
+    opacity: 100%
+  }
+  .show-all:hover {
+    color: var(--tertiary);
+    box-shadow: 0 0 2px var(--black);
+  }
+  #contact-section {
+    background-color: var(--background);
+    text-align: center;
+    height: 75vh;
+  }
+  #contact-section h1 {
+    margin-top: 300px;
+    color: var(--black);
+    font-size: 50px;
+  }
+  #contact-section .proposal {
+    color: var(--tertiary);
+    font-size: 25px;
+    font-family: "Lora", serif;
+    font-style: italic;
+  }
+  #contact-section .social-medias {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #contact-section .social-media {
+    text-decoration: none;
+    color: var(--black);
+    transition: transform 0.2s ease-in;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    font-size: 22px;
+    font-family: "Lora", serif;
+  }
+  #contact-section .social-media:hover {
+    transform: scale(1.1, 1.1);
+    transition: color ease-in-out;
+    color: var(--tertiary);
+  }
+  footer {
+    background-color: var(--background);
+    color: var(--black);
+    border-top: 1px solid var(--black);
+    font-size: 25px;
+    padding: 30px;
+    font-family: "Lora", serif;
+  }
+  @media only screen and (width < 700px) {
+    h1 {
+        font-size: 50px;
+    }
+    #projects .project-tile {
+        height: 600px;
+        width: 100%;
+    }
+}
