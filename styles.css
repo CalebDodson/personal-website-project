@@ -14,6 +14,8 @@
     margin: 0;
     padding: 0;
     height: 100vh;
+    z-index: -1;
+    overflow-x: hidden;
   }
   #navbar {
     display: flex;
@@ -25,6 +27,7 @@
     padding: 20px 0;
     font-size: 20px;
     border-bottom: 1px solid black;
+    z-index: 2;
   }
   .nav-links {
     display: flex;
@@ -48,6 +51,7 @@
   }
   section {
     padding: 70px 0;
+    z-index: 1;
   }
   #headshot {
     box-shadow: 0 0 10px var(--black);
@@ -66,12 +70,15 @@
     margin-right: 5vw;
   }
   h1 {
+    position: relative;
     font-family: "Oswald", sans-serif;
     text-align: center;
+    z-index: 1;
   }
   #headshot {
     max-width: 30vh;
     border-radius: 30vh;
+    z-index: 1;
   }
   #welcome-section h1 {
     color: var(--black);
@@ -91,12 +98,14 @@
     height: 80vh;
   }
   #about-section h1 {
+    position: relative;
     color: var(--black);
     width: fit-content;
     margin: auto;
     font-size: 50px;
   }
   #about-section p {
+    position: relative;
     color: var(--tertiary);
     width: 50%;
     min-width: 400px;
@@ -105,6 +114,7 @@
     font-size: 25px;
     font-family: "Lora", serif;
     font-style: italic;
+    z-index: 1;
   }
   #projects-section {
     background-color: var(--background);
@@ -139,6 +149,7 @@
     color: var(--black);
     border-radius: 8px;
     box-shadow: 0 0 5px var(--black);
+    z-index: 1;
   }
   #projects-section .project-tile img{
     height: 100%;
@@ -168,6 +179,7 @@
     color: var(--tertiary);
   }
   .show-all {
+    position: relative;
     text-decoration: none;
     width: max-content;
     display: flex;
@@ -182,6 +194,7 @@
     transition: background-color 0.2s ease-in;
     font-family: "Lora", serif;
     box-shadow: 0 0 5px var(--black);
+    z-index: 1;
   }
   .show-all span {
     opacity: 0%;
@@ -234,12 +247,64 @@
     color: var(--tertiary);
   }
   footer {
+    position: relative;
     background-color: var(--background);
     color: var(--black);
     border-top: 1px solid var(--black);
     font-size: 25px;
     padding: 30px;
     font-family: "Lora", serif;
+    z-index: -2;
+  }
+  .rectangle {
+    position: absolute;
+    background-color: var(--purple);
+    z-index: 0;
+  }
+  #rectangle1 {
+    width: 110vh;
+    height: 30vh;
+    top: 45%;
+    left: 55%;
+    box-shadow: 0 0 5px var(--black);
+    border-radius: 7px;
+    transform: rotate(6deg);
+  }
+  #rectangle2 {
+    width: 100vh;
+    height: 24vh;
+    top: 102%;
+    right: 70%;
+    box-shadow: 0 0 5px var(--black);
+    border-radius: 10px;
+    transform: rotate(5deg);
+  }
+  #rectangle3 {
+    width: 100vh;
+    height: 40vh;
+    top: 170%;
+    left: 90%;
+    box-shadow: 0 0 5px var(--black);
+    border-radius: 3px;
+    transform: rotate(-3deg);
+  }
+  #rectangle4 {
+    width: 70vh;
+    height: 90vh;
+    top: 280%;
+    right: 70%;
+    box-shadow: 0 0 5px var(--black);
+    border-radius: 5px;
+    transform: rotate(2deg);
+  }
+  #rectangle5 {
+    width: 60vh;
+    height: 17vh;
+    top: 403%;
+    left: 80%;
+    box-shadow: 0 0 5px var(--black);
+    border-radius: 5px;
+    transform: rotate(-10deg);
   }
   @media only screen and (width < 700px) {
     h1 {

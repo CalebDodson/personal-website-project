@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"/>  
+    <script src="javascript.js"></script>
+    <style>
+        :root {
+                --background: #f8f9fa;
+                --purple: #6A5ACD;
+                --black: #1C1C1C;
+                --secondary: #5D5C61;
+                --tertiary: #4A708B;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                background-color: var(--background);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            form {
+                background-color: var(--tertiary);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: auto;
+                width: 500px;
+                text-align: center;
+                padding: 1em 0 1em 0;
+                border-radius: 8px;
+                box-shadow: 0 0 5px black;
+            }
+            label {
+                color: var(--background);
+                margin-bottom: .1em;
+                font-family: "Oswald", sans-serif;
+                font-size: 24px;
+            }
+            #email, #name {
+                background-color: var(--background);
+                color: var(--black);
+                border: 2px solid var(--background);
+                border-radius: 5px;
+                padding: 0.3em;
+                width: 80%;
+                margin-bottom: .5em;
+                outline: none;
+                font-family: "Lora", serif;
+                box-shadow: 0 0 5px var(--black);
+            }
+            #email:hover, #name:hover, textarea:hover {
+                border: 2px solid var(--black);
+            }
+            #email:focus {
+                border-color: var(--black);
+            }
+            #email::placeholder {
+                color: var(--secondary);
+            }
+            textarea {
+                background-color: var(--background);
+                color: var(--black);
+                border: 2px solid var(--background);
+                padding: 0.3em;
+                border-radius: 5px;
+                margin-bottom: .5em;
+                min-width: 80%;
+                max-width: 80%;
+                min-height: 6em;
+                height: auto;
+                font-family: "Lora", serif;
+                box-shadow: 0 0 5px var(--black);
+            }
+            textarea::placeholder {
+                color: var(--secondary);
+            }
+            textarea:focus {
+                border-color: var(--black);
+            }
+            input[type="submit"] {
+                width: 20%;
+                border-radius: 5px;
+                padding: .3em 0 .3em 0;
+                background-color: var(--background);
+                border: none;
+                box-shadow: 0 0 10px var(--black);
+                font-family: "Lora", serif;
+            }
+            input[type="submit"]:hover {
+                cursor: pointer;
+                box-shadow: 0 0 5px var(--black);
+            }
+    </style>
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="success.html" id="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="John Doe" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@email.com" required>
+        <label for="textField">Message:</label>
+        <textarea id="textField" name="textField" placeholder="Enter your message here" required></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>
