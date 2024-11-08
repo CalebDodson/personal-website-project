@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ultra&display=swap" rel="stylesheet">
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
     rel="stylesheet"/>  
@@ -34,16 +34,23 @@
                 align-items: center;
                 height: auto;
                 width: 500px;
-                text-align: center;
                 padding: 1em 0 1em 0;
                 border-radius: 8px;
                 box-shadow: 0 0 5px black;
             }
+            h1 {
+                color: var(--background);
+                font-family: "Oswald", sans-serif;
+                font-size: 30pt;
+            }
             label {
+                text-align: left;
+                width: 80%;
                 color: var(--background);
                 margin-bottom: .1em;
-                font-family: "Oswald", sans-serif;
-                font-size: 24px;
+                font-family: "Lora", serif;
+                font-weight: 600;
+                font-size: 18pt;
             }
             #email, #name {
                 background-color: var(--background);
@@ -55,6 +62,7 @@
                 margin-bottom: .5em;
                 outline: none;
                 font-family: "Lora", serif;
+                font-size: 14pt;
                 box-shadow: 0 0 5px var(--black);
             }
             #email:hover, #name:hover, textarea:hover {
@@ -78,6 +86,7 @@
                 min-height: 6em;
                 height: auto;
                 font-family: "Lora", serif;
+                font-size: 16pt;
                 box-shadow: 0 0 5px var(--black);
             }
             textarea::placeholder {
@@ -104,6 +113,7 @@
 </head>
 <body>
     <form action="success.html" id="form">
+        <h1>Email Submission Form</h1>
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="John Doe" required>
         <label for="email">Email:</label>
