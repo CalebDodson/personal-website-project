@@ -73,6 +73,9 @@
   #welcome-section-container {
     text-align: center;
   }
+  .name {
+    white-space: nowrap;
+}
   h1 {
     position: relative;
     font-family: "Oswald", sans-serif;
@@ -229,7 +232,7 @@
   #contact-section .social-media:active {
     transform: scale(1, 1);
     color: var(--black);
-}
+  }
   footer {
     position: relative;
     background-color: var(--background);
