@@ -6,41 +6,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ultra&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-    rel="stylesheet"/>  
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Caleb Portfolio</title>
     <script src="script.js"></script>
   </head>
   <body>
-    <header>
-      <nav id="navbar">
-        <ul class="nav-links">
-            <li class="nav-link">
-                <a href="#welcome-section">
-                    <span><</span>Home<span>></span>
-                </a>
-            </li>
-            <li class="nav-link">
-                <a href="#about-section">
-                    <span><</span>About Me<span>></span>
-                </a>
-            </li>
-            <li class="nav-link">
-                <a href="#projects-section">
-                    <span><</span>My Projects<span>></span>
-                </a>
-            </li>
-            <li class="nav-link">
-                <a href="#contact-section">
-                    <span><</span>Contact<span>></span>
-                </a>
-            </li>
-        </ul>
-      </nav>
-    </header>
+    <nav id="navbar">
+    <ul class="nav-links">
+        <li class="nav-link">
+            <a href="#welcome-section">
+                <span><</span>Home<span>></span>
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="#about-section">
+                <span><</span>About<span>></span>
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="#projects-section">
+                <span><</span>Projects<span>></span>
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="#contact-section">
+                <span><</span>Contact<span>></span>
+            </a>
+        </li>
+    </ul>
+    </nav>
 
-    
     <section id="welcome-section">
         <div id="welcome-section-container">
             <h1>Hello, I'm Caleb Dodson</h1>
@@ -63,11 +60,11 @@
       <div class="projects">
         <a href="https://lucent-cocada-e902b0.netlify.app/" class="project-tile" target="_blank">
             <img src="images/PokemonSearchAppSC.png" alt="Pokemon search app page">
-            <p><span><</span>Pokemon Search App<span>></span></p>
+            <p><span><</span>Pokemon Search<span>></span></p>
         </a>
         <a href="https://jolly-treacle-9307a3.netlify.app/" class="project-tile" target="_blank">
             <img src="images/AlbrightDocSC.png" alt="Bobby fischer tribute page">
-            <p><span><</span>Albright Sonata Page<span>></span></p>
+            <p><span><</span>Albright Sonata<span>></span></p>
         </a>
         <a href="https://astonishing-dragon-706996.netlify.app/" class="project-tile" target="_blank">
             <img src="images/pomodoro-clock-img.png" alt="Pomodoro clock page">
@@ -88,24 +85,34 @@
     </section>
 
     <section id="contact-section">
-        <h1>Let's work together!</h1>
-        <p class="proposal">How do you take your coffee?</p>
-        <div class="social-medias">
-            <a href="https://github.com/CalebDodson" target="_blank" class="social-media">
-                <i class="ri-github-fill"></i>
-                <p>GitHub</p>
-            </a>
-            <a href="https://www.linkedin.com/in/caleb-dodson-51429a229/" target="_blank" class="social-media">
-                <i class="fa-brands fa-twitter"></i>
-                <p>LinkedIn</p>
-            </a>
-            <a href="contact.html" class="social-media">
-                <i class="ri-mail-send-fill"></i>
-                <p>Send an Email</p>
-            </a>
+        <div>
+            <h1>Let's work together!</h1>
+            <p class="proposal">How do you take your coffee?</p>
+            <div class="social-medias">
+                <a href="https://github.com/CalebDodson" target="_blank" class="social-media">
+                    <i class="ri-github-fill"></i>
+                    <p>GitHub</p>
+                </a>
+                <a href="https://www.linkedin.com/in/caleb-dodson-51429a229/" target="_blank" class="social-media">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>
+                <a href="contact.html" class="social-media">
+                    <i class="ri-mail-send-fill"></i>
+                    <p>Send an Email</p>
+                </a>
+                <a href="./images/Caleb Dodson_Resume.pdf" target="_blank" class="social-media">
+                    <i class="fa-solid fa-user"></i>
+                    <p>Resume</p>
+                </a>
+                <a href="./images/Caleb Dodson_Cover Letter (1).pdf" target="_blank" class="social-media">
+                    <i class="fa-solid fa-file-lines"></i>
+                    <p>Cover Letter</p>
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer>&copy; 2025 Created by Caleb Dodson</footer>
+    <footer>Created by Caleb Dodson</footer>
   </body>
 </html>
