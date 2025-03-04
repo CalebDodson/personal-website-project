@@ -226,6 +226,10 @@
     transition: color ease-in-out;
     color: var(--tertiary);
   }
+  #contact-section .social-media:active {
+    transform: scale(1, 1);
+    color: var(--black);
+}
   footer {
     position: relative;
     background-color: var(--background);
