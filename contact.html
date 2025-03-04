@@ -34,14 +34,16 @@
                 align-items: center;
                 height: auto;
                 width: 500px;
-                padding: 1em 0 1em 0;
                 border-radius: 8px;
                 box-shadow: 0 0 5px black;
+                margin-left: 20px;
+                margin-right: 20px;
+                padding: 0 20px 20px 20px;
             }
             h1 {
                 color: var(--background);
                 font-family: "Oswald", sans-serif;
-                font-size: 30pt;
+                font-size: 48px;
             }
             label {
                 text-align: left;
@@ -50,19 +52,19 @@
                 margin-bottom: .1em;
                 font-family: "Lora", serif;
                 font-weight: 600;
-                font-size: 18pt;
+                font-size: 24px;
             }
             #email, #name {
                 background-color: var(--background);
                 color: var(--black);
                 border: 2px solid var(--background);
                 border-radius: 5px;
-                padding: 0.3em;
+                padding: 2px 0 2px 6px;
                 width: 80%;
                 margin-bottom: .5em;
                 outline: none;
                 font-family: "Lora", serif;
-                font-size: 14pt;
+                font-size: 24px;
                 box-shadow: 0 0 5px var(--black);
             }
             #email:hover, #name:hover, textarea:hover {
@@ -81,8 +83,7 @@
                 padding: 0.3em;
                 border-radius: 5px;
                 margin-bottom: .5em;
-                min-width: 80%;
-                max-width: 80%;
+                width: 80%;
                 min-height: 6em;
                 height: auto;
                 font-family: "Lora", serif;
@@ -107,6 +108,20 @@
             input[type="submit"]:hover {
                 cursor: pointer;
                 box-shadow: 0 0 5px var(--black);
+            }
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 36px;
+                }
+                label, #email, #name, textarea {
+                    font-size: 20px;
+                    width: 90%;
+                }
+            }
+            @media (max-width: 430px) {
+                form {
+                    text-align: center;
+                }
             }
     </style>
     <title>Contact Form</title>
